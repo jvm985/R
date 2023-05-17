@@ -4,6 +4,9 @@
 \usepackage[utf8]{inputenc}
 \usepackage{listings}
 
+\usepackage{graphicx}
+\graphicspath{ {./figuren/} }
+
 \begin{document}
 
 
@@ -24,14 +27,12 @@
 \section{Data}
 
 \section{Bewerkingen}
-
+\includegraphics[scale=.5]{ren.jpeg}
 \begin{lstlisting}[language=R]
-    # Creating a Graph
     attach(mtcars)
     plot(wt, mpg)
     abline(lm(mpg~wt))
-    title("Regression of MPG on Weight")
-    
+    title("Regression van MPG op Weight")
 \end{lstlisting}
 
 
