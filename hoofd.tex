@@ -2,6 +2,7 @@
 
 \usepackage[dutch]{babel}
 \usepackage[utf8]{inputenc}
+\usepackage{listings}
 
 \begin{document}
 
@@ -19,9 +20,19 @@
 
 \chapter{Werking}
 
+
 \section{Data}
 
 \section{Bewerkingen}
+
+\begin{lstlisting}[language=R]
+    # Creating a Graph
+    attach(mtcars)
+    plot(wt, mpg)
+    abline(lm(mpg~wt))
+    title("Regression of MPG on Weight")
+    
+\end{lstlisting}
 
 
 \chapter{Toepassingen}
