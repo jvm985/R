@@ -26,13 +26,21 @@
 \section{Data}
 
 \section{Bewerkingen}
-\includegraphics[scale=.5]{ren.jpeg}
-\begin{lstlisting}[language=R]
-    attach(mtcars)
-    plot(wt, mpg)
-    abline(lm(mpg~wt))
-    title("Regression van MPG op Weight")
-\end{lstlisting}
+<<>>=
+attach(mtcars)
+plot(wt, mpg)
+abline(lm(mpg~wt))
+title("Regressie van MPG en Weight")
+
+@
+
+% \includegraphics[scale=.5]{ren.jpeg}
+% \begin{lstlisting}[language=R]
+%     attach(mtcars)
+%     plot(wt, mpg)
+%     abline(lm(mpg~wt))
+%     title("Regression van MPG op Weight")
+% \end{lstlisting}
 
 \section{Dynamische R code}
 <<>>=
