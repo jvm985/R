@@ -14,25 +14,34 @@
 \title{R voor humane wetenschappen}
 \date{September 2023}
 
-\maketitle
-\tableofcontents
+%\maketitle
+%\tableofcontents
 
-\chapter{Installatie}
+%\chapter{Installatie}
 
 %\include{"software"}
 
-\chapter{Werking}
+%\chapter{Werking}
 
-\section{Data}
+%\section{Data}
 
 \section{Bewerkingen}
-\includegraphics[scale=.5]{ren.jpeg}
-\begin{lstlisting}[language=R]
-    attach(mtcars)
-    plot(wt, mpg)
-    abline(lm(mpg~wt))
-    title("Regression van MPG op Weight")
-\end{lstlisting}
+
+<<t,fig=true>>=
+attach(mtcars)
+plot(wt, mpg)
+abline(lm(mpg~wt))
+title("Regressie van MPG en Weight")
+
+@
+
+% \includegraphics[scale=.5]{ren.jpeg}
+% \begin{lstlisting}[language=R]
+%     attach(mtcars)
+%     plot(wt, mpg)
+%     abline(lm(mpg~wt))
+%     title("Regression van MPG op Weight")
+% \end{lstlisting}
 
 \section{Dynamische R code}
 <<>>=
